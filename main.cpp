@@ -11,7 +11,6 @@ int main()
 {
     boardSolver solver;
 
-    // Now you can print the found words after the constructor has done all the work
     cout << "Found words: " << solver.foundWords.size() << endl;
 
 
