@@ -1,0 +1,3 @@
+/Users/carter/wordHunt/build/CMakeFiles/wordHunt.dir
+/Users/carter/wordHunt/build/CMakeFiles/edit_cache.dir
+/Users/carter/wordHunt/build/CMakeFiles/rebuild_cache.dir
