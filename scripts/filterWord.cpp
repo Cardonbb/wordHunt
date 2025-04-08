@@ -7,7 +7,7 @@ using namespace std;
 
 int main() 
 {
-    ifstream infile("dictionary.txt");
+    ifstream infile("data/dictionary.txt");
     vector<string> filtered_words;
     string word;
 

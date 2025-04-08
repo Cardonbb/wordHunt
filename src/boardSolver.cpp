@@ -52,7 +52,7 @@ void boardSolver::getBoard()
 
 void boardSolver::buildDictionary()
 {
-    ifstream infile("filtered.txt");
+    ifstream infile("data/filtered.txt");
     string word;    
 
     if(!infile.is_open()) 

@@ -8,6 +8,8 @@ from collections import Counter
 import torch
 from torchvision import datasets, transforms
 from pynput.mouse import Button, Controller
+import os
+os.system("g++ src/main.cpp src/boardSolver.cpp src/trie.cpp -o main -std=c++17")
 
 
 #
@@ -38,7 +40,7 @@ with mss.mss() as sct:
     monitor = sct.monitors[1] 
     screenshot = np.array(sct.grab(monitor))
     screenshot = cv2.cvtColor(screenshot, cv2.COLOR_BGRA2BGR)
-cv2.imwrite("board_capture.png", screenshot)
+cv2.imwrite("assets/board_capture.png", screenshot)
 
 #process board
 image = screenshot
@@ -153,7 +155,7 @@ for word, coords in wordPaths:
 
 mouse = Controller()
 
-#swipe
+#swipe swapped to pynut cuz i couldnt get pyauto to work
 for word, coords in scaledWordPaths:
     if len(coords) < 2:
         continue
