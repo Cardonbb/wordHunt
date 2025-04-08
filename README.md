@@ -23,7 +23,7 @@ A full pipeline bot for WordHunt using computer vision, deep learning, and algor
 2. **Screenshot**: Captures the game board area using `mss`.
 3. **Preprocessing**: Tiles are extracted and preprocessed using `Opencv`
 4. **Tile OCR**: Feeds cropped tiles into our CNN model.
-5. **Board Solve**: Our python script sends the tiles on the board to our C++ solver(via `subprocess` to find words
+5. **Board Solve**: Our python script sends the tiles on the board to our C++ solver(via `subprocess`) to find words
 6. **Auto-Swipe**: Simulates mouse dragging through tile paths to submit answers.
 
 ## Demo
