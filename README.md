@@ -28,5 +28,11 @@ A full pipeline bot for WordHunt using computer vision, deep learning, and algor
 
 ## Demo
 
-![Demo](wordHunt.gif)
+<p align="center">
+  <img src="wordHunt.gif" alt="Demo" width="1000"/>
+</p>
 
+<p align="center">
+  <img src="win1.png" alt="Results 1" width="300"/>
+  <img src="win2.png" alt="Results 2" width="300"/>
+</p>
