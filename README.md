@@ -26,3 +26,7 @@ A full pipeline bot for WordHunt using computer vision, deep learning, and algor
 5. **Board Solve**: Our python script sends the tiles on the board to our C++ solver(via `subprocess` to find words
 6. **Auto-Swipe**: Simulates mouse dragging through tile paths to submit answers.
 
+## Demo
+
+![Demo](wordHunt.gif)
+
