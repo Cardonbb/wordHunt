@@ -4,16 +4,24 @@
 #include <string>
 #include "trie.h"
 #include "boardSolver.h"
+#include <chrono>
 
 using namespace std;
+using namespace std::chrono;
 
 int main() 
 {
     boardSolver solver;
-
-    cout << "Found words: " << solver.foundWords.size() << endl;
-
-
     
+    for(auto& wp : solver.foundWords) 
+    {
+        cout << wp.word << " ";
+        for(auto& p : wp.path) 
+        {
+            cout << p.first << "," << p.second << " ";
+        }
+        cout << endl;
+    }
+
     return 0;
 }

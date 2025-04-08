@@ -3,16 +3,8 @@
 boardSolver::boardSolver()
 {
     buildDictionary();
-    //getBoard();
-    // testing
-    letters = { 
-        'c', 'a', 't', 's', 
-        'r', 'e', 'd', 'o', 
-        'g', 'o', 'd', 'a', 
-        'n', 'e', 't', 'p' 
-    };
-    int mapType = 1;
-    createBoard(letters, mapType);
+    getBoard();
+    createBoard(letters, wordHuntMap);
     findWords();
 
 }
@@ -20,14 +12,42 @@ boardSolver::boardSolver()
 
 
 void boardSolver::getBoard()
-{
-    // this is placeholder for when i read into it 
-    // this part will be done another day since 
-    // i have to read board using opencv // another service
-    int thisMap = 0;
-    wordHuntMap = thisMap;
-    vector<char> letter;
-    letters = letter;
+{   
+
+    //size 36->25->5xs5
+    //size 27->16->4x4
+    string line;
+    vector<char> letterList;
+    vector<pair<int,int>> coords;
+
+    while(getline(cin, line)) 
+    {
+        if(line.empty())
+        {
+            continue;
+        }
+        char ch;
+        int x;
+        int y;
+        istringstream iss(line);
+        iss >> ch >> x >> y;
+        ch = tolower(ch);
+        letterList.push_back(ch);
+        coords.push_back({x, y});
+    }
+
+    letters = letterList;
+
+    int size = static_cast<int>(letters.size());
+    if(size == 16 || size == 27)
+    {
+        wordHuntMap = 1;
+    }
+    else
+    {
+        wordHuntMap = 0;
+    }
+    
 }
 
 void boardSolver::buildDictionary()
@@ -38,13 +58,12 @@ void boardSolver::buildDictionary()
     if(!infile.is_open()) 
     {
 
-        cout << "Error: Could not open file." << endl;
+        cout << "Error: Could not open file.a" << endl;
     }
     while(getline(infile, word)) 
     {
         Dictionary.insertWord(word);
     }
-    cout << "Tree Completed";
 
     infile.close();
 }
@@ -76,22 +95,7 @@ void boardSolver::createBoard(const vector<char>& letters, const int wordHuntMap
         }
     }
 
-    if(wordHuntMap == 3) 
-    {
-        board[0][0] = '#';
-        board[0][4] = '#';
-        board[4][0] = '#';
-        board[4][4] = '#';
-        board[2][2] = '#';
-    } 
-    
-    if(wordHuntMap == 4) 
-    {
-        board[0][2] = '#';
-        board[2][0] = '#';
-        board[4][2] = '#';
-        board[2][4] = '#';
-    }
+   
 
 }
 

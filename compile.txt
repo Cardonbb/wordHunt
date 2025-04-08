@@ -1,0 +1,1 @@
+g++ main.cpp boardSolver.cpp trie.cpp -o main -std=c++17

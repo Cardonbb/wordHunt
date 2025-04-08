@@ -6,6 +6,7 @@
 #include <vector>
 #include <string>
 #include "trie.h"
+#include <sstream>
 
 using namespace std;
 
@@ -32,4 +33,4 @@ public:
     void dfs(int r, int c, TrieNode* node, string currentWord, vector<pair<int, int>>& path);
 };
 
-#endif // BOARD_SOLVER_H
+#endif 
