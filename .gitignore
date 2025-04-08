@@ -17,3 +17,5 @@ main
 # Screenshots and temp files
 board_capture.png
 start_button.png
+.venv/
+build/
