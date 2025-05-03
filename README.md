@@ -1,4 +1,4 @@
-#I fix thsi part later zzzzz
+# I fix thsi part later zzzzz
 
 
 # WordHunt Bot
