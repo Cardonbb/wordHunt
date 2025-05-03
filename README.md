@@ -1,3 +1,6 @@
+#I fix thsi part later zzzzz
+
+
 # WordHunt Bot
 
 A full pipeline bot for WordHunt using computer vision, deep learning, and algorithmic pathfinding
