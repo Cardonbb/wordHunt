@@ -150,7 +150,6 @@ scaledWordPaths = []
 for word, coords in wordPaths:
     scaledCoords = [(x * scaled, y * scaled) for x, y in coords]
     scaledWordPaths.append((word, scaledCoords))
-# Only process the first 5 words
 
 
 mouse = Controller()
