@@ -30,7 +30,7 @@ A full pipeline bot for WordHunt using computer vision, deep learning, and algor
 6. **Auto-Swipe**: Simulates mouse dragging through tile paths to submit answers.
 
 
-alsoo I havent made it track start button yet so either calibrate/line up or just click play urself and should work
+alsoo I havent made it track start button yet so either calibrate/line up or just click play urself and should work. (does track board tho)
 
 
 ## Demo
