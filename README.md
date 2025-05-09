@@ -15,7 +15,7 @@ A full pipeline bot for WordHunt using computer vision, deep learning, and algor
 ##  Tech Stack
 
 - **Python**: Image Processing, Model Inference, Automation
-- **PyTorch**: For trainign and creating the OCR model
+- **PyTorch**: For training and creating the OCR model
 - **OpenCV**: Preprocessing tiles
 - **C++**: For solving the board
 - **pynput**: To swipe the words
