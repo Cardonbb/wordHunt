@@ -1,1 +1,7 @@
-will do later so lazy
+pyautogui
+mss
+numpy
+opencv-python
+torch
+torchvision
+pynput
