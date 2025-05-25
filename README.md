@@ -27,7 +27,7 @@ The bot executes a sequential pipeline to solve the game from screen to swipe:
 2.  **Tile Preprocessing**: Isolates and processes each letter tile from the screenshot using `OpenCV`.
 3.  **Character Recognition (OCR)**: Feeds the cleaned tile images into a custom trained PyTorch CNN model to identify the letter on each tile.
 4.  **Board Solving**: Passes the 2D character grid to a C++ backend via a `subprocess`. The C++ solver uses a Trie data structure and efficient graph traversal to find every valid word from a dictionary file.
-5.  **Automated Swiping**: Uses `pynput` to simulate precise mouse-drag paths for each found word, submitting the answers to the game automatically.
+5.  **Automated Swiping**: Uses `pynput` to simulate precise mouse drag paths for each found word, submitting the answers to the game automatically.
 
 ## Tech Stack
 
