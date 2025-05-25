@@ -1,4 +1,14 @@
-# I fix thsi part later zzzzz
+## Demo
+
+<p align="center">
+  <img src="wordHunt.gif" alt="Demo" width="1000"/>
+</p>
+
+<p align="center">
+  <img src="win1.png" alt="Results 1" width="300"/>
+  <img src="win2.png" alt="Results 2" width="300"/>
+</p>
+
 
 
 # WordHunt Bot
@@ -32,14 +42,3 @@ A full pipeline bot for WordHunt using computer vision, deep learning, and algor
 
 alsoo I havent made it track start button yet so either calibrate/line up or just click play urself and should work. (does track board tho)
 
-
-## Demo
-
-<p align="center">
-  <img src="wordHunt.gif" alt="Demo" width="1000"/>
-</p>
-
-<p align="center">
-  <img src="win1.png" alt="Results 1" width="300"/>
-  <img src="win2.png" alt="Results 2" width="300"/>
-</p>
