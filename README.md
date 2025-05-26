@@ -48,8 +48,6 @@ Copy and paste the following commands into the Terminal, one at a time, pressing
     ```bash
     xcode-select --install
     ```
-    *(A window might pop up asking for your permission; just click "Install". If it says the tools are already installed, that's perfect.)*
-
 2.  **Download the Bot:**
     ```bash
     git clone https://github.com/Cardonbb/wordHunt.git
