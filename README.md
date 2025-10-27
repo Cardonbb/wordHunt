@@ -38,38 +38,3 @@ The bot executes a sequential pipeline to solve the game from screen to swipe:
 * **pynput**: To control mouse input for swiping words
 * **mss**: Used for screen capture
 
-##  How to Use
-
-Only works for Mac + you need to use Iphone Mirroring
-
-Copy and paste the following commands into the Terminal, one at a time, pressing **Enter** after each one.
-
-1.  **Install C++ Compiler:**
-    ```bash
-    xcode-select --install
-    ```
-2.  **Download the Bot:**
-    ```bash
-    git clone https://github.com/Cardonbb/wordHunt.git
-    ```
-
-3.  **Go into the Bot's Folder:**
-    ```bash
-    cd wordHunt
-    ```
-
-4.  **Install the Python Packages:**
-    ```bash
-    pip3 install -r requirements.txt
-    ```
-
-## To run the Bot!
-
-To run the bot make sure you are in the same Terminal window and use this command:
-
-```bash
-python play.py
-```
-
-
-Small problem is the start button click is hard coded so just click it if its not in the correct place.
