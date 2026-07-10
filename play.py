@@ -145,6 +145,9 @@ for line in result.stdout.strip().splitlines():
         coords.append((center_x, center_y))
     wordPaths.append((word, coords))
 
+# longest words first = most points banked before the timer runs out
+wordPaths.sort(key=lambda wp: len(wp[0]), reverse=True)
+
 scaled = 0.5
 scaledWordPaths = []
 for word, coords in wordPaths:
